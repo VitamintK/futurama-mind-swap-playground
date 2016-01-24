@@ -19,6 +19,36 @@ div#buttons div{
 	width:20px;
 	display:inline-block;
 }
+/*THE FULLSCREEN BUTTON IS A SINGLE DIV OF CSS BECAUSE LITERALLY NO REASON.*/
+div#buttons #fullscreen{
+	background:#EEEEEE;
+	z-index:1;
+}
+div#buttons #fullscreen:after{
+	display:block;
+	position:relative;
+	content: '';
+	height:7px;
+	width: 3px;
+	background:#888;
+	margin-top:-3px;
+	margin-left: 2px;
+	z-index: 2;
+	box-shadow: 14px 0 0 0px #888, 0 9px 0 0 #888, 14px 9px 0 0 #888;
+}
+div#buttons #fullscreen:before{
+	display:block;
+	background:#888;
+	height:3px;
+	width:7px;
+	z-index: 2;
+	content: '';
+	position:relative;
+	margin-top:2px;
+	margin-left:2px;
+	box-shadow: 10px 0 0 0px #888, 0 13px 0 0 #888, 10px 13px 0 0 #888;
+}
+/*END FULLSCREEN BUTTON*/
 div#buttons #restart{	
 	background-image: url("reload.png");
 	background-size: contain;
