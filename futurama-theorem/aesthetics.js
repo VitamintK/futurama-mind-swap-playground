@@ -163,7 +163,7 @@ doEverything = function(){
 	
 }
 var colorful = localStorage.getItem("colorful");
-if(colorful == null){colorful = "true";}
+if(colorful == null){colorful = "false";}
 	var brains = [];
 	var bodies = [];
 	var bgs = [];
