@@ -1,0 +1,46 @@
+body{
+	text-align: center;
+}
+#flesh-container{
+	min-height: 150px;
+}
+x-brain{
+	box-sizing:border-box;
+	display:block;
+	height:50px;
+	width:50px;
+	position:absolute;
+	top:25px;
+	left:25px;
+}
+label{
+	height: 100px;
+	width: 100px;
+	background: gray;
+	/*-moz-border-radius: 50px;
+	-webkit-border-radius:50px;
+	border-radius: 50px;*/
+	display:inline-block;
+	margin:10px;
+	cursor:pointer;
+	box-sizing: border-box;
+	position:relative;
+}
+input[type=checkbox]{
+	display:none;
+}
+input[type=checkbox]:checked + label{
+	border: 5px solid;
+
+	/*height:92px;
+	width:92px;
+	margin:9px;*/
+	-webkit-filter: saturate(200%);
+	-moz-filter: saturate(200%);
+	filter:saturate(200%);
+	background:red;
+}
+input[type=checkbox]:checked + label x-brain{
+	top:20px;
+	left:20px;
+}
