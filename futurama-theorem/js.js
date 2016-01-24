@@ -76,8 +76,11 @@ Flesh.prototype.moveBrain = function(new_flesh){
 var brains = [];
 var bodies = [];
 var bgs = [];
+average = 0;//ath.random()*255;
+green = Math.floor(Math.random()*100);
+blue = Math.floor(Math.random()*100);
 for(k = 0; k < 6; k++){
-	bgs.push("rgb("+Math.floor(Math.random()*100)+",50,50)");
+	bgs.push("rgb("+Math.floor(Math.min(Math.random()*100)+average,255)+","+50+","+50+")");
 }
 for(j = 0; j < 6; j++){
 	br = document.createElement("x-brain");
