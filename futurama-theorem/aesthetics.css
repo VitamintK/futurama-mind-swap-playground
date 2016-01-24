@@ -139,3 +139,31 @@ input[type=checkbox]:checked + label x-brain{
 	top:20px;
 	left:20px;
 }
+#buttons #restart.throb {
+    -webkit-animation: pulsate 1s linear 0.1s 7 alternate;
+    -moz-animation: pulsate 1s linear 0.1s 7 alternate;
+    -animation: pulsate 1s linear 0.1s 7 alternate;
+}
+/*@-webkit-keyframes pulsate {
+    from { box-shadow: 0 0 10px #333; }
+    to { box-shadow: 0 0 20px #c00; }
+}
+@-moz-keyframes pulsate {
+    from { box-shadow: 0 0 10px #333; }
+    to { box-shadow: 0 0 20px #c00; }
+}
+@keyframes pulsate {
+    from { box-shadow: 0 0 10px #333; }
+    to { box-shadow: 0 0 20px #c00; }*/
+@-webkit-keyframes pulsate{
+	from{-webkit-transform:scale(1);}
+	to{-webkit-transform:scale(1.5);}
+}
+@-moz-keyframes pulsate{
+	from{-moz-transform:scale(1);}
+	to{-moz-transform:scale(1.5);}
+}
+@keyframes pulsate{
+	from{transform:scale(1);}
+	to{transform:scale(1.5);}
+}

@@ -48,6 +48,7 @@ function checkDone(){
 function checkDoneAndFin(){
 	if(checkDone()){
 		document.getElementById("swap").className = "disappear";
+		document.getElementById("restart").className = "throb";
 	}
 }
 function swap(){
@@ -148,6 +149,7 @@ doEverything = function(){
 	//
 	//remove the "disappear" class from the swap button, to make it visible again.
 	document.getElementById("swap").className = "";
+	document.getElementById("restart").className = "";
 	//remove all the old bodies from the DOM.
 	fc = document.getElementById("flesh-container");
 	while (fc.firstChild) {
