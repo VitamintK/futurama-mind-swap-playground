@@ -157,13 +157,13 @@ input[type=checkbox]:checked + label x-brain{
     to { box-shadow: 0 0 20px #c00; }*/
 @-webkit-keyframes pulsate{
 	from{-webkit-transform:scale(1);}
-	to{-webkit-transform:scale(1.5);}
+	to{-webkit-transform:scale(1.35);}
 }
 @-moz-keyframes pulsate{
 	from{-moz-transform:scale(1);}
-	to{-moz-transform:scale(1.5);}
+	to{-moz-transform:scale(1.35);}
 }
 @keyframes pulsate{
 	from{transform:scale(1);}
-	to{transform:scale(1.5);}
+	to{transform:scale(1.35);}
 }
