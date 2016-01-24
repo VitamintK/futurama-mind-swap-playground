@@ -135,7 +135,8 @@ doEverything = function(){
 	for(k = num/-2; k < 1 + (num/2); k++){
 		//bgs.push("rgb("+Math.floor(Math.min(Math.random()*100)+average,255)+","+50+","+50+")");
 		if(colorful=="true"){
-			bgs.push("rgb("+Math.floor(Math.min(Math.random()*100)+average,255)+","+green+","+blue+")");
+			spread = Math.floor(Math.random()*10) + 20;
+			bgs.push("rgb("+(k*spread+100)+","+green+","+blue+")");
 		} else {
 			bgs.push("rgb("+(50+k*17)+","+50+","+50+")");
 		}

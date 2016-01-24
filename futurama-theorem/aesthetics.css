@@ -87,9 +87,9 @@ label{
 	position:relative;
 }
 input[type=checkbox]:not(:checked) + label:hover{
-	-webkit-filter: saturate(180%);
-	-moz-filter: saturate(180%);
-	filter:saturate(180%);
+	-webkit-filter: saturate(175%);
+	-moz-filter: saturate(175%);
+	filter:saturate(175%);
 }
 input[type=checkbox]{
 	display:none;
