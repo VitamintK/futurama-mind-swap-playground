@@ -10,6 +10,22 @@ body{
   -ms-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
 }
+div#gh-button{
+	position:fixed;
+	background-image:url("gh.png");
+	background-size:contain;
+	cursor:pointer;
+	height:20px;
+	width:20px;
+	right:10px;
+	opacity:0.3;
+	-webkit-transition: opacity 0.16s ease-in-out;
+    -moz-transition: opacity 0.16s ease-in-out;
+    transition: opacity 0.16s ease-in-out;
+}
+div#gh-button:hover{
+	opacity:0.85;
+}
 div#buttons{
 	position:fixed;
 }
