@@ -185,7 +185,7 @@ doEverything = function(){
 }
 //main
 var colorful = localStorage.getItem("colorful");
-if(colorful == null){colorful = "false";}
+if(colorful == null){colorful = "true";}
 	var brains = [];
 	var bodies = [];
 	var bgs = [];
